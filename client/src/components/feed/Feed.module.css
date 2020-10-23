@@ -1,0 +1,39 @@
+.feed {
+
+}
+
+.tuitt {
+	display: flex;
+	padding: 1rem;
+	background-color: #fff;
+	border-bottom: solid 1px #cccccc;
+}
+
+.profilePicCtn {
+	flex-basis: 49px;
+	margin-right: 10px;
+}
+
+.tuittInfo {
+	margin-bottom: 0.35rem;
+}
+
+.username {
+	margin-right: 0.4rem;
+	font-weight: bold;
+}
+
+.ign {
+	color: #657786;
+}
+
+.dotSeparator {
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 1rem;
+	color: #657786;
+}
+
+.date {
+	color: #657786;
+}

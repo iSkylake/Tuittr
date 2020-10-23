@@ -1,0 +1,10 @@
+.app {
+	background-color: #ededed;
+	min-height: 100%;
+}
+
+.mainCtn {
+	max-width: 700px;
+	margin: 1rem auto;
+	border: solid 1px #cccccc;
+}

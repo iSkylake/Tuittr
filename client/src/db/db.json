@@ -1,0 +1,41 @@
+{
+	"currentUser": {
+		"username": "Murabito",
+		"ign": "murabito",
+		"profilePic": "#922fcc"
+	},
+	"tuitts": 	[
+		{
+			"id": "1603339182000",
+			"username": "Audie Wolfie",
+			"ign": "audiewolf",
+			"profilePic": "#0fd960",
+			"text": "I played singleplayer hide and seek and I won... I'm so bored.",
+			"date": "2020-10-22T03:59:42.000Z"
+		},
+		{
+			"id": "1603342782000",
+			"username": "Marshal Squil",
+			"ign": "marshsquill",
+			"profilePic": "#0f4cd9",
+			"text": "First day at Doge and I'm unpacking my belongings. Looking forward to meet my neighbors",
+			"date": "2020-10-22T04:59:42.000Z"
+		},
+		{
+			"id": "1603418400000",
+			"username": "Timmy",
+			"ign": "timmy",
+			"profilePic": "#9c4e09",
+			"text": "New Halloween items are on sale this month! We are having daily items.",
+			"date": "2020-10-23T02:00:00.000Z"
+		},
+		{
+			"id": "1603422000000",
+			"username": "Isabelle",
+			"ign": "isabelle",
+			"profilePic": "#c6d618",
+			"text": "Today we have a new neighbor! Lets give Marshal a warm welcome. Kicks is also visiting today, check the items he's selling.",
+			"date": "2020-10-23T03:00:00.000Z"
+		}
+	]
+}
