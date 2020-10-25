@@ -1,6 +1,7 @@
 .app {
 	background-color: #ededed;
 	min-height: 100%;
+	overflow: auto;
 }
 
 .mainCtn {

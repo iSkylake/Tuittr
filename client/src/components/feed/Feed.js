@@ -12,7 +12,7 @@ function Feed() {
 		<div className={cls.feed}>
 			{
 				tuitts.map(tuitt => (
-					<div className={cls.tuitt} key={tuitt.ign}>
+					<div className={cls.tuitt} key={tuitt.id}>
 						<div className={cls.profilePicCtn}>
 							<ProfilePicture color={tuitt.profilePic} size='lg'/>
 						</div>
