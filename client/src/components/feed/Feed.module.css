@@ -2,7 +2,7 @@
 
 }
 
-.tuitt {
+.tuit {
 	display: flex;
 	padding: 1rem;
 	background-color: #fff;
@@ -14,7 +14,7 @@
 	margin-right: 10px;
 }
 
-.tuittInfo {
+.tuitInfo {
 	margin-bottom: 0.35rem;
 }
 

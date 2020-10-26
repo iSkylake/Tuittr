@@ -6,27 +6,27 @@ import formatDate from '../../utils/formatDate';
 import ProfilePicture from '../common/ProfilePicture';
 
 function Feed() {
-	const { tuitts } = useContext(StateContext).state;
+	const { tuits } = useContext(StateContext).state;
 
 	return (
 		<div className={cls.feed}>
 			{
-				tuitts.map(tuitt => (
-					<div className={cls.tuitt} key={tuitt.id}>
+				tuits.map(tuit => (
+					<div className={cls.tuit} key={tuit.id}>
 						<div className={cls.profilePicCtn}>
-							<ProfilePicture color={tuitt.profilePic} size='lg'/>
+							<ProfilePicture color={tuit.profilePic} size='lg'/>
 						</div>
-						<div className={cls.tuittContent}>
-							<div className={cls.tuittInfo}>
-								<span className={cls.username}>{tuitt.username}</span>
-								<span className={cls.ign}>{`@${tuitt.ign}`}</span>
+						<div className={cls.tuitContent}>
+							<div className={cls.tuitInfo}>
+								<span className={cls.username}>{tuit.username}</span>
+								<span className={cls.ign}>{`@${tuit.ign}`}</span>
 								<span className={cls.dotSeparator}>·</span>
-								<time className={cls.date} dateTime={tuitt.date}>
-									{formatDate(tuitt.date)}
+								<time className={cls.date} dateTime={tuit.date}>
+									{formatDate(tuit.date)}
 								</time>
 							</div>
-							<div className={cls.tuittText}>
-								{ tuitt.text }
+							<div className={cls.tuitText}>
+								{ tuit.text }
 							</div>
 						</div>
 					</div>

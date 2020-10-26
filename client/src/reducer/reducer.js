@@ -5,8 +5,8 @@ function reducer(state, action) {
 		case 'ADD_TUIT':
 			return ({
 				...state,
-				tuitts: [
-					...state.tuitts,
+				tuits: [
+					...state.tuits,
 					{...payload}
 				]
 			});
