@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import cls from './Feed.module.css';
 import { StateContext } from '../../context/stateContext';
 import formatDate from '../../utils/formatDate';
+import sortByDate from '../../utils/sortByDate';
 
 import ProfilePicture from '../common/ProfilePicture';
 
@@ -11,7 +12,7 @@ function Feed() {
 	return (
 		<div className={cls.feed}>
 			{
-				tuits.map(tuit => (
+				tuits.sort(sortByDate).map(tuit => (
 					<div className={cls.tuit} key={tuit.id}>
 						<div className={cls.profilePicCtn}>
 							<ProfilePicture color={tuit.profilePic} size='lg'/>
