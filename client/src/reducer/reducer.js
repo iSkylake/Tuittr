@@ -11,6 +11,12 @@ function reducer(state, action) {
 				]
 			});
 
+		case 'DELETE_TUIT':
+			return ({
+				...state,
+				tuits: state.tuits.filter(tuit => tuit.id !== payload)
+			})
+
 		default:
 			return state;
 	}
