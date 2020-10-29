@@ -1,7 +1,6 @@
 .menuItem {
 	display: flex;
 	padding: 0.7rem;
-	width: 100%;
 	border-bottom: solid 1px #ccc;
 	cursor: pointer;
 }

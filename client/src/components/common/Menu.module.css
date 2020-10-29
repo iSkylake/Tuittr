@@ -2,13 +2,13 @@
 	position: absolute;
 	top: 0;
 	right: 0;
-	max-width: calc(295px);
+	max-width: 250px;
+	background-color: #fff;
 	font-size: 14px;
 	border: solid 1px #ccc;
 	border-radius: 4px;
-	background-color: #fff;
 	overflow: hidden;
-	box-shadow: rgba(101, 119, 134, 0.2) 0px 0px 15px, rgba(101, 119, 134, 0.15) 0px 0px 3px 1px;
+	box-shadow: rgba(101, 119, 134, 0.2) 0px 0px 15px,
+							rgba(101, 119, 134, 0.15) 0px 0px 3px 1px;
 	z-index: 1;
-	max-width: 250px;
 }

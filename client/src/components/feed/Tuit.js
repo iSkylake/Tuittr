@@ -35,30 +35,30 @@ function Tuit(props) {
 					<div className={cls.moreIconCtn}>
 						<div className={cls.moreIconBtn} onClick={onOpen} ref={dropRef}>
 							<MoreIcon className={cls.moreIcon}/>
-							{
-								open && (
-									<Menu>
-										<MenuItem
-											color='secondary'
-											clickable
-											disabled={!isOwner}
-											onClick={() => dispatch({
-												type: 'DELETE_TUIT',
-												payload: tuit.id
-											})}
-										>
-											<DeleteIcon
-												className={
-												`${cls.deleteIcon} ${!isOwner ? cls.disabled : ''}`.trim()}
-											/>
-											Delete
-										</MenuItem>
-										<MenuItem>SECOND</MenuItem>
-									</Menu>
-								)
-							}
 						</div>
 					</div>
+						{
+							open && (
+								<Menu>
+									<MenuItem
+										color='secondary'
+										clickable
+										disabled={!isOwner}
+										onClick={() => dispatch({
+											type: 'DELETE_TUIT',
+											payload: tuit.id
+										})}
+									>
+										<DeleteIcon
+											className={
+												`${cls.deleteIcon} ${!isOwner ? cls.disabled : ''}`.trim()
+											}
+										/>
+										Delete
+									</MenuItem>
+								</Menu>
+							)
+						}
 				</div>
 				<div className={cls.tuitText}>
 					{ tuit.text }
