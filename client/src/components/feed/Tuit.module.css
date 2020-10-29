@@ -1,0 +1,85 @@
+.tuit {
+	display: flex;
+	padding: 1rem;
+	background-color: #fff;
+	border-bottom: solid 1px #cccccc;
+}
+
+.profilePicCtn {
+	flex-basis: 49px;
+	margin-right: 10px;
+}
+
+.tuitContent {
+	width: 100%;
+}
+
+.tuitHeader {
+	display: flex;
+	justify-content: space-between;
+}
+
+.tuitInfo {
+	margin-bottom: 0.35rem;
+}
+
+.username {
+	margin-right: 0.4rem;
+	font-weight: bold;
+}
+
+.ign {
+	color: #657786;
+}
+
+.dotSeparator {
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 1rem;
+	color: #657786;
+}
+
+.date {
+	color: #657786;
+}
+
+.moreIconCtn {
+	position: relative;
+}
+
+.moreIconBtn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 27px;
+	height: 27px;
+	border-radius: 50%;
+	transition: background-color 0.4s;
+}
+
+.moreIconBtn:hover {
+	background-color: rgba(31, 169, 255, 0.1);
+}
+
+.moreIconBtn:hover .moreIcon {
+	fill: #1fa9ff;
+}
+
+.moreIcon {
+	fill: #657786;
+	width: 23px;
+	height: 23px;
+	transition: fill 0.4s;
+}
+
+.deleteIcon {
+	margin-right: 0.3rem;
+	fill: #e0245e;
+}
+
+.disabled {
+	fill: #adadad;
+}
