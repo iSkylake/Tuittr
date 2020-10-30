@@ -2,9 +2,9 @@ import React from 'react';
 import cls from './App.module.css';
 
 import { StateContextProvider } from './context/stateContext';
-import Navbar from './components/navbar/Navbar';
-import TuitForm from './components/tuitForm/TuitForm';
-import Feed from './components/feed/Feed';
+import Navbar from './components/Navbar';
+import TuitForm from './components/TuitForm';
+import Feed from './components/Feed';
 
 function App() {
   return (
