@@ -1,21 +1,12 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import cls from './Tuit.module.css';
-import { StateContext } from '../../context/stateContext';
-import useDropdown from '../../hooks/useDropdown';
 import formatDate from '../../utils/formatDate';
-import { ReactComponent as MoreIcon } from '../../images/more_horiz.svg';
-import { ReactComponent as DeleteIcon } from '../../images/delete.svg';
 
 import ProfilePicture from '../common/ProfilePicture';
-import Menu from '../common/Menu';
-import MenuItem from '../common/MenuItem';
+import MoreMenuButton from './MoreMenuButton';
 
 function Tuit(props) {
 	const { tuit } = props;
-	const { state, dispatch } = useContext(StateContext);
-	const { open, dropRef, onOpen } = useDropdown(false);
-	
-	const isOwner = state.currentUser.ign === tuit.ign;
 
 	return (
 		<div className={cls.tuit}>
@@ -32,33 +23,7 @@ function Tuit(props) {
 							{formatDate(tuit.date)}
 						</time>
 					</div>
-					<div className={cls.moreIconCtn}>
-						<div className={cls.moreIconBtn} onClick={onOpen} ref={dropRef}>
-							<MoreIcon className={cls.moreIcon}/>
-						</div>
-					</div>
-						{
-							open && (
-								<Menu>
-									<MenuItem
-										color='secondary'
-										clickable
-										disabled={!isOwner}
-										onClick={() => dispatch({
-											type: 'DELETE_TUIT',
-											payload: tuit.id
-										})}
-									>
-										<DeleteIcon
-											className={
-												`${cls.deleteIcon} ${!isOwner ? cls.disabled : ''}`.trim()
-											}
-										/>
-										Delete
-									</MenuItem>
-								</Menu>
-							)
-						}
+					<MoreMenuButton tuit={tuit}/>
 				</div>
 				<div className={cls.tuitText}>
 					{ tuit.text }
