@@ -8,6 +8,14 @@ import Tuit from './Tuit';
 function Feed() {
 	const { state } = useContext(StateContext);
 
+	if(!state.tuits.length) {
+		return (
+			<div className={cls.empty}>
+				<h2>No tuits available</h2>
+			</div>
+		)
+	}
+
 	return (
 		<div className={cls.feed}>
 			{
