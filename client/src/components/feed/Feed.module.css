@@ -1,3 +1,10 @@
 .feed {
 
 }
+
+.empty {
+	padding: 1rem;
+	background-color: #fff;
+	color: #657786;
+	text-align: center;
+}
