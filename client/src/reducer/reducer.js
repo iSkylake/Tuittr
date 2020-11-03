@@ -17,6 +17,12 @@ function reducer(state, action) {
 				tuits: state.tuits.filter(tuit => tuit.id !== payload)
 			})
 
+		case 'SELECT_USER':
+			return ({
+				...state,
+				currentUser: { ...payload }
+			})
+
 		default:
 			return state;
 	}

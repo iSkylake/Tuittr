@@ -28,7 +28,7 @@ function TuitForm() {
 
 	return (
 		<form className={cls.tuitForm} onSubmit={handleSubmit}>
-			<ProfilePicture/>
+			<ProfilePicture color={state.currentUser.profilePic}/>
 			<input className={cls.tuitInput} {...tuit} placeholder="What's on your mind?"/>
 			<button className={cls.tuitSubmit}>Submit</button>
 		</form>

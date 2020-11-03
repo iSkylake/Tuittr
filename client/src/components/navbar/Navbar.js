@@ -9,8 +9,16 @@ import Menu from '../common/Menu';
 import MenuItem from '../common/MenuItem';
 
 function Navbar() {
-	const { currentUser, users } = useContext(StateContext).state;
+	const { state, dispatch } = useContext(StateContext);
 	const { open, dropRef, onOpen } = useDropdown(false);
+
+	const handleUser = user => {
+		const { ign, username, profilePic } = user;
+		dispatch({
+			type: 'SELECT_USER',
+			payload: { ign, username, profilePic }
+		})
+	}
 
 	return (
 		<nav className={cls.navbar}>
@@ -18,15 +26,15 @@ function Navbar() {
 				<h1 className={cls.name}>Tuittr</h1>
 			</div>
 			<div className={cls.itemCtn}>
-				<ProfilePicture color={currentUser.profilePic}/>
-				<h4>{currentUser.username}</h4>
+				<ProfilePicture color={state.currentUser.profilePic}/>
+				<h4>{state.currentUser.username}</h4>
 				<ExpandIcon className={cls.expandIcon} onClick={onOpen} ref={dropRef}/>
 				{
 					open && (
 						<Menu>
 							{
-								users.map(user => (
-									<MenuItem key={user.ign}>
+								state.users.map(user => (
+									<MenuItem key={user.ign} onClick={() => handleUser(user)}>
 										<ProfilePicture color={user.profilePic}/>
 										<h4>{ user.username }</h4>
 									</MenuItem>
