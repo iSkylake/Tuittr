@@ -1,4 +1,31 @@
 {
+	"users": [
+		{
+			"ign": "murabito",
+			"username": "Murabito",
+			"profilePic": "#922fcc"
+		},
+		{
+			"ign": "audiewolf",
+			"username": "Audie Wolfie",
+			"profilePic": "#0fd960"
+		},
+		{
+			"ign": "marshsquill",
+			"username": "Marshal Squil",
+			"profilePic": "#0f4cd9"
+		},
+		{
+			"ign": "timmy",
+			"username": "Timmy",
+			"profilePic": "#9c4e09"
+		},
+		{
+			"ign": "isabelle",
+			"username": "Isabelle",
+			"profilePic": "#c6d618"
+		}
+	],
 	"currentUser": {
 		"username": "Murabito",
 		"ign": "murabito",
