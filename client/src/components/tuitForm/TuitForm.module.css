@@ -6,13 +6,29 @@
 	border-bottom: solid 1px #cccccc;
 }
 
-.tuitInput {
+.tuitCtn {
+	position: relative;
 	width: 75%;
+}
+
+.tuitInput {
+	width: 100%;
+	height: 100%;
 	padding-left: 1rem;
+	padding-right: 3rem;
 	font-size: 1rem;
 	background-color: #ededed;
 	border: none;
 	border-radius: 20px;
+	box-sizing: border-box;
+}
+
+.charCount {
+	position: absolute;
+	top: 50%;
+	right: 2%;
+	transform: translate(-2%, -50%);
+	color: #657786;
 }
 
 .tuitSubmit {
