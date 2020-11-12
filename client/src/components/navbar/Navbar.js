@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useEffect, useContext } from 'react';
 import cls from './Navbar.module.css';
 import { StateContext } from '../../context/stateContext';
 import useDropdown from '../../hooks/useDropdown';
@@ -19,6 +19,10 @@ function Navbar() {
 			payload: { ign, username, profilePic }
 		})
 	}
+
+	useEffect(() => {
+		document.title = `Tuittr | ${state.currentUser.username} (@${state.currentUser.ign})`;
+	}, [state.currentUser]);
 
 	return (
 		<nav className={cls.navbar}>
