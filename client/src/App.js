@@ -1,7 +1,8 @@
 import React from 'react';
 import cls from './App.module.css';
 
-import { StateContextProvider } from './context/stateContext';
+import { TuitContextProvider } from './context/tuitContext';
+import { UserContextProvider } from './context/userContext';
 import Navbar from './components/Navbar';
 import TuitForm from './components/TuitForm';
 import Feed from './components/Feed';
@@ -9,13 +10,15 @@ import Feed from './components/Feed';
 function App() {
   return (
     <div className={cls.app}>
-      <StateContextProvider>
+      <UserContextProvider>
+      <TuitContextProvider>
         <Navbar/>
         <main className={cls.mainCtn}>
           <TuitForm/>
           <Feed/>
         </main>
-      </StateContextProvider>
+      </TuitContextProvider>
+      </UserContextProvider>
     </div>
   );
 }

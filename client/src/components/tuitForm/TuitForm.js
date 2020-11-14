@@ -1,12 +1,14 @@
 import React, { useState, useEffect, useContext } from 'react';
 import cls from './TuitForm.module.css';
 
-import { StateContext } from '../../context/stateContext';
+import { UserContext } from '../../context/userContext';
+import { TuitContext } from '../../context/tuitContext';
 import useInput from '../../hooks/useInput';
 import ProfilePicture from '../common/ProfilePicture';
 
 function TuitForm() {
-	const { state, dispatch } = useContext(StateContext);
+	const { state } = useContext(UserContext);
+	const { dispatch } = useContext(TuitContext);
 	const [ charCount, setCharCount ] = useState(280);
 	const tuit = useInput('');
 
