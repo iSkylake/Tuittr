@@ -1,4 +1,4 @@
-function reducer(state, action) {
+function tuitReducer(state, action) {
 	const { type, payload } = action;
 
 	switch(type) {
@@ -17,15 +17,9 @@ function reducer(state, action) {
 				tuits: state.tuits.filter(tuit => tuit.id !== payload)
 			})
 
-		case 'SELECT_USER':
-			return ({
-				...state,
-				currentUser: { ...payload }
-			})
-
 		default:
 			return state;
 	}
 }
 
-export default reducer;
+export default tuitReducer;

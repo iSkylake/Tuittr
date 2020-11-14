@@ -1,12 +1,12 @@
 import React, { useContext } from 'react';
 import cls from './Feed.module.css';
-import { StateContext } from '../../context/stateContext';
+import { TuitContext } from '../../context/tuitContext';
 import sortByDate from '../../utils/sortByDate';
 
 import Tuit from './Tuit';
 
 function Feed() {
-	const { state } = useContext(StateContext);
+	const { state } = useContext(TuitContext);
 
 	if(!state.tuits.length) {
 		return (

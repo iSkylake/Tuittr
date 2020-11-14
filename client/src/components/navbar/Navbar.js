@@ -1,6 +1,6 @@
 import React, { useEffect, useContext } from 'react';
 import cls from './Navbar.module.css';
-import { StateContext } from '../../context/stateContext';
+import { UserContext } from '../../context/userContext';
 import useDropdown from '../../hooks/useDropdown';
 import { ReactComponent as ExpandIcon } from '../../images/expand_more.svg';
 
@@ -9,7 +9,7 @@ import Menu from '../common/Menu';
 import MenuItem from '../common/MenuItem';
 
 function Navbar() {
-	const { state, dispatch } = useContext(StateContext);
+	const { state, dispatch } = useContext(UserContext);
 	const { open, dropRef, onOpen } = useDropdown(false);
 
 	const handleUser = user => {

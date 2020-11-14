@@ -1,6 +1,7 @@
 import React, { useContext, Fragment } from 'react';
 import cls from './MoreMenuButton.module.css';
-import { StateContext } from '../../context/stateContext';
+import { UserContext } from '../../context/userContext';
+import { TuitContext } from '../../context/tuitContext';
 import useDropdown from '../../hooks/useDropdown';
 import { ReactComponent as MoreIcon } from '../../images/more_horiz.svg';
 import { ReactComponent as DeleteIcon } from '../../images/delete.svg';
@@ -10,9 +11,10 @@ import MenuItem from '../common/MenuItem';
 
 function MoreMenuButton(props) {
 	const { tuit } = props;
-	const { state, dispatch } = useContext(StateContext);
+	const { state } = useContext(UserContext);
+	const { dispatch } = useContext(TuitContext);
 	const { open, dropRef, onOpen } = useDropdown(false);
-	
+
 	const isOwner = state.currentUser.ign === tuit.ign;
 
 	return (
