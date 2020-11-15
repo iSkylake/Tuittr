@@ -37,7 +37,7 @@ function Navbar() {
 					open && (
 						<Menu>
 							{
-								state.users.map(user => (
+								state.users.filter(user => user.ign !== state.currentUser.ign).map(user => (
 									<MenuItem key={user.ign} onClick={() => handleUser(user)}>
 										<ProfilePicture color={user.profilePic}/>
 										<h4>{ user.username }</h4>
