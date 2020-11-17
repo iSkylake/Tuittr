@@ -1,14 +1,20 @@
 .tuitForm {
 	display: flex;
-	justify-content: space-around;
+	flex-direction: column;
 	padding: 1rem;
 	background-color: #fff;
 	border-bottom: solid 1px #cccccc;
 }
 
-.tuitCtn {
+.picInputCtn {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 0.4rem;
+}
+
+.tuitInputCtn {
 	position: relative;
-	width: 75%;
+	width: 90%;
 }
 
 .tuitInput {

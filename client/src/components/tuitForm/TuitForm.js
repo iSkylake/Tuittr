@@ -35,15 +35,17 @@ function TuitForm() {
 
 	return (
 		<form className={cls.tuitForm} onSubmit={handleSubmit}>
-			<ProfilePicture color={state.currentUser.profilePic}/>
-			<div className={cls.tuitCtn}>
-				<input
-					className={cls.tuitInput}
-					{...tuit}
-					placeholder="What's on your mind?"
-					maxLength='280'
-				/>
-				<span className={cls.charCount}>{charCount}</span>
+			<div className={cls.picInputCtn}>
+				<ProfilePicture color={state.currentUser.profilePic}/>
+				<div className={cls.tuitInputCtn}>
+					<input
+						className={cls.tuitInput}
+						{...tuit}
+						placeholder="What's on your mind?"
+						maxLength='280'
+					/>
+					<span className={cls.charCount}>{charCount}</span>
+				</div>
 			</div>
 			<button className={cls.tuitSubmit}>Submit</button>
 		</form>
