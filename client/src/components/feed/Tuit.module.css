@@ -11,7 +11,8 @@
 }
 
 .tuitContent {
-	width: 100%;
+	max-width: 100%;
+	min-width: 0px;
 }
 
 .tuitHeader {
@@ -21,15 +22,33 @@
 }
 
 .tuitInfo {
+	display: flex;
 	margin-bottom: 0.35rem;
+	max-width: 100%;
+	min-width: 0px;
+}
+
+.userIgnCtn {
+	display: flex;
+	min-width: 0px;
+}
+
+.hideOverflow {
+	max-width: 100%;
+	min-width: 0px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 
 .username {
+	flex-shrink: 0;
 	margin-right: 0.4rem;
 	font-weight: bold;
 }
 
 .ign {
+	flex-shrink: 1;
 	color: #657786;
 }
 
@@ -42,4 +61,5 @@
 
 .date {
 	color: #657786;
+	white-space: nowrap;
 }

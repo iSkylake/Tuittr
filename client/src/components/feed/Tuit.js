@@ -16,8 +16,10 @@ function Tuit(props) {
 			<div className={cls.tuitContent}>
 				<div className={cls.tuitHeader}>
 					<div className={cls.tuitInfo}>
-						<span className={cls.username}>{tuit.username}</span>
-						<span className={cls.ign}>{`@${tuit.ign}`}</span>
+						<div className={cls.userIgnCtn}>
+							<span className={`${cls.username} ${cls.hideOverflow}`}>{tuit.username}</span>
+							<span className={`${cls.ign} ${cls.hideOverflow}`}>{`@${tuit.ign}`}</span>
+						</div>
 						<span className={cls.dotSeparator}>·</span>
 						<time className={cls.date} dateTime={tuit.date}>
 							{formatDate(tuit.date)}
