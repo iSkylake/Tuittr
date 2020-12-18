@@ -3,7 +3,8 @@ import cls from './ProfilePicture.module.css';
 
 const sizes = {
 	sm: '37px',
-	lg: '45px'
+	lg: '45px',
+	xlg: '130px'
 }
 
 function ProfilePicture(props) {

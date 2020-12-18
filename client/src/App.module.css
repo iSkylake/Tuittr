@@ -6,6 +6,7 @@
 
 .mainCtn {
 	max-width: 700px;
-	margin: 1rem auto;
+	margin: 0 auto 1rem auto;
 	border: solid 1px #cccccc;
+	box-sizing: border-box;
 }
