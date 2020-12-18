@@ -1,0 +1,68 @@
+.header {
+	background-color: #fff;
+	border-bottom: solid 1px #ccc;
+	padding-bottom: 1rem;
+}
+
+.headerPicture {
+	padding-bottom: 27%;
+}
+
+.headerInfo {
+	display: flex;
+	padding: 0 1rem;
+}
+
+.profilePicCtn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+	width: 140px;
+	height: 140px;
+	margin-top: -12%;
+	border-radius: 9999px;
+}
+
+.nameCtn {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.username {
+	font-size: 19px;
+}
+
+.ign {
+	font-size: 15px;
+	color: #657786;
+}
+
+.usernameExpandCtn {
+	display: flex;
+	position: relative;
+}
+
+.expandIcon {
+	width: 22px;
+	height: 22px;
+	padding: 0.15rem;
+	fill: #657786;
+	cursor: pointer;
+	border-radius: 50%;
+	transition: background-color 0.4s;
+}
+
+.expandIcon:hover {
+	fill: #1fa9ff;
+	background-color: rgba(31, 169, 255, 0.1);
+}
+
+.menuItemProfilePic {
+	margin-right: 0.4rem;
+}
+
+.menuItemUsername {
+	white-space: nowrap;
+}

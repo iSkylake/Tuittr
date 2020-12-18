@@ -1,11 +1,14 @@
 .navbar {
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
+	margin: 0 auto;
 	padding: 0 2rem;
+	max-width: 700px;
 	height: 53px;
 	background-color: #fff;
-	border-bottom: solid 1px #cccccc;
+	border-left: solid 1px #cccccc;
+	border-right: solid 1px #cccccc;
+	box-sizing: border-box;
 }
 
 .itemCtn {
@@ -15,19 +18,4 @@
 
 .name {
 	color: #1fa9ff;
-}
-
-.expandIcon {
-	width: 22px;
-	height: 22px;
-	padding: 0.15rem;
-	fill: #657786;
-	cursor: pointer;
-	border-radius: 50%;
-	transition: background-color 0.4s;
-}
-
-.expandIcon:hover {
-	fill: #1fa9ff;
-	background-color: rgba(31, 169, 255, 0.1);
 }

@@ -4,7 +4,6 @@ import cls from './TuitForm.module.css';
 import { UserContext } from '../../context/userContext';
 import { TuitContext } from '../../context/tuitContext';
 import useInput from '../../hooks/useInput';
-import ProfilePicture from '../common/ProfilePicture';
 
 function TuitForm() {
 	const { state } = useContext(UserContext);
@@ -36,7 +35,6 @@ function TuitForm() {
 	return (
 		<form className={cls.tuitForm} onSubmit={handleSubmit}>
 			<div className={cls.picInputCtn}>
-				<ProfilePicture color={state.currentUser.profilePic}/>
 				<div className={cls.tuitInputCtn}>
 					<input
 						className={cls.tuitInput}
