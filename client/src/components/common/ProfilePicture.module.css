@@ -1,3 +1,25 @@
 .profilePicture {
 	border-radius: 50%;
 }
+
+.sm {
+	width: 37px;
+	height: 37px;
+}
+
+.lg {
+	width: 45px;
+	height: 45px;
+}
+
+.xlg {
+	width: 130px;
+	height: 130px;
+}
+
+@media only screen and (max-width: 500px) {
+	.xlg {
+		width: 90px;
+		height: 90px;
+	}
+}

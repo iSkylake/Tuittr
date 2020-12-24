@@ -66,3 +66,10 @@
 .menuItemUsername {
 	white-space: nowrap;
 }
+
+@media only screen and (max-width: 500px) {
+	.profilePicCtn {
+		width: 100px;
+		height: 100px;
+	}
+}
