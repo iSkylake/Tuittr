@@ -2,9 +2,9 @@ import React from 'react';
 import cls from './ProfilePicture.module.css';
 
 const sizes = {
-	sm: '37px',
-	lg: '45px',
-	xlg: '130px'
+	sm: cls.sm,
+	lg: cls.lg,
+	xlg: cls.xlg
 }
 
 function ProfilePicture(props) {
@@ -15,8 +15,8 @@ function ProfilePicture(props) {
 
 	return (
 		<div
-			className={cls.profilePicture}
-			style={{backgroundColor: color, width: sizes[size], height: sizes[size]}}
+			className={`${cls.profilePicture} ${sizes[size]}`.trim()}
+			style={{backgroundColor: color}}
 		/>
 	)
 }
