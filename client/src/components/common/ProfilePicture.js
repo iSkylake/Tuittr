@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import cls from './ProfilePicture.module.css';
 
 const sizes = {
@@ -19,6 +20,11 @@ function ProfilePicture(props) {
 			style={{backgroundColor: color}}
 		/>
 	)
+}
+
+ProfilePicture.propTypes = {
+	color: PropTypes.string.isRequired,
+	size: PropTypes.string.isRequired
 }
 
 export default ProfilePicture;

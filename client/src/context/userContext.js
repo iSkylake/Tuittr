@@ -1,4 +1,5 @@
 import { createContext, useReducer } from 'react';
+import PropTypes from 'prop-types';
 
 import userReducer from '../reducer/userReducer';
 import db from '../db/users.json';
@@ -16,4 +17,8 @@ export function UserContextProvider(props) {
 			{ children }
 		</UserContext.Provider>
 	)
+}
+
+UserContextProvider.propTypes = {
+	children: PropTypes.node.isRequired
 }

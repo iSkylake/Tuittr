@@ -1,4 +1,5 @@
 import React, { useContext, Fragment } from 'react';
+import PropTypes from 'prop-types';
 import cls from './MoreMenuButton.module.css';
 import { UserContext } from '../../context/userContext';
 import { TuitContext } from '../../context/tuitContext';
@@ -48,6 +49,10 @@ function MoreMenuButton(props) {
 			}
 		</Fragment>
 	);
+}
+
+MoreMenuButton.propTypes = {
+	tuit: PropTypes.object.isRequired
 }
 
 export default MoreMenuButton;
