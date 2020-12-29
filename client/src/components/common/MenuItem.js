@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import cls from './MenuItem.module.css';
 
 function MenuItem(props) {
@@ -14,6 +15,12 @@ function MenuItem(props) {
 			{ props.children }
 		</li>
 	)
+}
+
+MenuItem.propTypes = {
+	color: PropTypes.string.isRequired,
+	disabled: PropTypes.bool.isRequired,
+	onClick: PropTypes.func.isRequired
 }
 
 export default MenuItem;

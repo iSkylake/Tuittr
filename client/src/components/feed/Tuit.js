@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import cls from './Tuit.module.css';
 import formatDate from '../../utils/formatDate';
 
@@ -33,6 +34,10 @@ function Tuit(props) {
 			</div>
 		</div>
 	)
+}
+
+Tuit.propTypes = {
+	tuit: PropTypes.object.isRequired
 }
 
 export default Tuit;

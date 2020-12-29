@@ -1,4 +1,5 @@
 import { createContext, useReducer } from 'react';
+import PropTypes from 'prop-types';
 
 import tuitReducer from '../reducer/tuitReducer';
 import db from '../db/tuits.json';
@@ -16,4 +17,8 @@ export function TuitContextProvider(props) {
 			{ children }
 		</TuitContext.Provider>
 	)
+}
+
+TuitContextProvider.propTypes = {
+	children: PropTypes.node.isRequired
 }

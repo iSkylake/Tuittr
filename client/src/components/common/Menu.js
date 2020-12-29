@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import cls from './Menu.module.css';
 
 function Menu(props) {
@@ -8,6 +9,10 @@ function Menu(props) {
 			{ props.children }
 		</ul>
 	)
+}
+
+Menu.propTypes = {
+	children: PropTypes.node.isRequired
 }
 
 export default Menu;
