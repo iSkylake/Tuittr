@@ -10,7 +10,7 @@ function Tuit(props) {
 	const { tuit } = props;
 
 	return (
-		<div className={cls.tuit}>
+		<article className={cls.tuit}>
 			<div className={cls.profilePicCtn}>
 				<ProfilePicture color={tuit.profilePic} size='lg'/>
 			</div>
@@ -32,7 +32,7 @@ function Tuit(props) {
 					{ tuit.text }
 				</div>
 			</div>
-		</div>
+		</article>
 	)
 }
 

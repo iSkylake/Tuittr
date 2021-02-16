@@ -25,7 +25,7 @@ function Header() {
 	}, [state.currentUser]);
 
 	return (
-		<div className={cls.header}>
+		<header className={cls.header}>
 			<div
 				className={cls.headerPicture}
 				style={{backgroundColor: state.currentUser.profilePic}}
@@ -58,7 +58,7 @@ function Header() {
 					<span className={cls.ign}>{`@${state.currentUser.ign}`}</span>
 				</div>
 			</div>
-		</div>
+		</header>
 	)
 }
 
