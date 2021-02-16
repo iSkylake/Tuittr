@@ -18,8 +18,8 @@ function MenuItem(props) {
 }
 
 MenuItem.propTypes = {
-	color: PropTypes.string.isRequired,
-	disabled: PropTypes.bool.isRequired,
+	color: PropTypes.string,
+	disabled: PropTypes.bool,
 	onClick: PropTypes.func.isRequired
 }
 

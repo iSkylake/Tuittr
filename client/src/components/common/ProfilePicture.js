@@ -22,9 +22,11 @@ function ProfilePicture(props) {
 	)
 }
 
+
+
 ProfilePicture.propTypes = {
-	color: PropTypes.string.isRequired,
-	size: PropTypes.string.isRequired
+	color: PropTypes.string,
+	size: PropTypes.string
 }
 
 export default ProfilePicture;
