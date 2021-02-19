@@ -14,7 +14,7 @@ function useDropdown(initValue) {
 		document.addEventListener('click', handleCloseOutside);
 
 		return () => {
-			document.addEventListener('click', handleCloseOutside)
+			document.removeEventListener('click', handleCloseOutside);
 		};
 	});
 
